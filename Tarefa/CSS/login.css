@@ -100,4 +100,15 @@
     div #Nao{
       color: #ffb03b;
     }
+     #botton{
+      color:white;
+      background-color: #ffb03b;
+      float:right;
+      border:none;
+    }
+    #icon{
+      width:30px;
+      
+    }
+
    
