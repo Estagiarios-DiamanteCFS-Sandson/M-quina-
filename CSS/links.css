@@ -1,0 +1,544 @@
+
+ 
+    
+
+
+
+#btnn:hover {
+  transform: scale(1.05);
+  
+}
+
+
+  .modal1 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    justify-content: start !important;
+    margin-left: 0 auto;
+  
+  }
+
+.modal1 div.image-upload {
+  width: 150px;
+  height: 100px;
+  border: 1px dashed darkorange; 
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.modal1 div.image-upload:hover {
+ transform: scale(1.05)
+}
+
+
+ /* Input de arquivo (escondido) */
+ .modal1 input[type="file"] {
+   position: absolute;
+   opacity: 0;
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+ }
+
+
+/*Cardápio*/
+
+  .modal2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: start !important;
+    margin-left: 0 auto;
+  
+  }
+
+.modal2 div.image-upload {
+  width: 500px;
+  height: 180px;
+  border: 1px dashed darkorange; 
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.modal2 div.image-upload:hover {
+ transform: scale(1.05)
+}
+
+
+ /* Input de arquivo (escondido) */
+ .modal2 input[type="file"] {
+   position: absolute;
+   opacity: 0;
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+ }
+
+#Descricao {
+  margin-left: 1px;
+}
+
+/*Fim Cardápio*/
+
+#cardmodal1
+{
+background: #FFE4E1;
+border: none;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.nome {
+  position: relative;
+}
+
+#botsalve {
+  background-color: darkorange;
+  transition: transform 0.3s;
+}
+#botsalve:hover {
+  background: transparent;
+  border: 3;
+  color: darkorange;
+  
+}
+.card {
+  background-color: #F0E68C;
+}
+
+
+
+.nome label {
+  color: black;
+  padding: 0 5px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 1em;
+  transition: 0.3s;
+}
+
+.nome .inputs {
+  margin-left: 5px;
+  color: #000;
+  border: 1px solid darkorange;
+  border-radius: 5px; 
+  width: 200px;
+  height: 35px;
+  padding: 0 1rem;
+  outline: none;
+}
+
+.inputs:focus~label,
+.inputs:valid~label {
+  top: -8px;
+  background-color: var (--preto);
+  font-size: o.5px;
+  z-index: 1000px;
+
+}
+
+.Linha1 {
+  display: flex;
+}
+
+#email {
+  margin-left: 20px;
+}
+
+/*Conteúdo Phon*/
+   /* Container principal */
+   .phone-container {
+     max-width: 100%;
+     margin: 0 auto;
+     position: relative;
+   }
+
+   /* Label flutuante */
+   .phone-container label {
+     position: absolute;
+     top: 50%;
+     left: 10px;
+     transform: translateY(-50%);
+     color: black;
+     font-size: 16px;
+     background: #008080;
+     padding: 0 5px;
+     transition: all 0.3s ease;
+     pointer-events: none;
+     opacity: 1;
+   }
+
+   /* Input personalizado */
+   #phone {
+     width: 200px;
+     padding: 5px 5px;
+     margin: 5px 0;
+     margin-left: 5px;
+     border: 1px solid darkorange;
+     border-radius: 4px;
+     font-size: 16px;
+     color: #000;
+     box-sizing: border-box;
+   }
+
+   #phone:focus {
+     outline: none;
+   }
+
+   #phone:focus+label,
+   #phone:not(:placeholder-shown)+label {
+     top: 50%;
+     transform: translateY(-50%);
+     opacity: 0;
+   }
+
+   /* Lista de países */
+   #countryList {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     right: 0;
+     background: white;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     z-index: 10;
+     display: none;
+     max-height: 200px;
+     overflow-y: auto;
+   }
+
+   #countryList div {
+     padding: 10px;
+     cursor: pointer;
+   }
+
+   #countryList div:hover {
+     background: #f0f0f0;
+   }
+/*Terminação*/
+    /* Container principal */
+    .message-container {
+      max-width: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* Label flutuante */
+    .message-container label {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: black;
+      font-size: 16px;
+      background: #000;
+      padding: 0 5px;
+      transition: all 0.3s ease;
+      pointer-events: none;
+      opacity: 1;
+    }
+
+    /* Input de mensagem */
+    #message {
+    width: 430px;
+     padding: 5px 5px;
+     margin: 5px 0;
+     margin-left: 5px;
+     border: 1px solid darkorange;
+     border-radius: 4px;
+     font-size: 16px;
+     color: #000;
+     background-color: #fff;
+     box-sizing: border-box;
+
+    }
+
+    #message:focus {
+      outline: none;
+      border-color: darkorange;
+    }
+
+    #message:focus+label,
+    #message:not(:placeholder-shown)+label {
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+
+    /* Estilo do botão de enviar */
+    #sendButton {
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #sendButton:hover {
+      background-color: #000;
+    }
+
+
+
+
+/* Cadastrar usuários*/
+.NomeUsu {
+  position: relative;
+}
+
+.NomeUsu label {
+padding: 0 5px;
+position: absolute;
+transform: translateY(-50%);
+top: 50%;
+left: 1em;
+transition: 0.3s;
+}
+
+.NomeUsu input {
+  margin-left: 10px;
+  color: #000;
+  border: 1px solid darkorange;
+  border-radius: 5px;
+  width: 189px;
+  height: 35px;
+  padding: 0 1rem;
+  outline: none;
+}
+
+.NomeC:focus {
+  outline: none;
+  border-color: darkorange;
+}
+
+.NomeC:focus+.lab,
+NomeC:not(:placeholder-shown)+.lab {
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+/*Sexo*/
+ .SelectOp {
+   position: relative;
+   width: 105px;
+   margin-left: 5px;
+ }
+
+ select {
+   appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   outline: none;
+   border: 1px solid darkorange;
+   background-color: #fff;
+   padding: 5px 8px;
+   font-size: 16px;
+   width: 100%;
+   cursor: pointer;
+   border-radius: 5px;
+   text-align: center;
+   color: #000
+ }
+
+ select:focus {
+   border-color: darkorange;
+ }
+
+select:not(:focus):valid {
+  color: black;
+}
+ .SelectOp::after {
+   
+   position: absolute;
+   right: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   pointer-events: none;
+   
+ }
+
+
+/*Data Nasc*/
+.DataNasc {
+  position: relative;
+  margin-left: -5px;
+}
+
+.DataNasc label {
+padding: 0 5px;
+position: absolute;
+transform: translateY(-50%);
+top: 50%;
+left: 1em;
+transition: 0.3s;
+}
+
+.DataNasc input {
+  margin-left: 10px;
+  color: #000;
+  border: 1px solid darkorange;
+  border-radius: 5px;
+  width: 105px;
+  height: 35px;
+  padding: 0 1rem;
+  outline: none;
+}
+
+.DataNasc label::after {
+   position: absolute;
+   right: 10px;
+   color: black;
+   top: 50%;
+   transform: translateY(-50%);
+   pointer-events: none;
+ }
+
+
+/*Estado Cívil*/
+.Estado {
+  position: relative;
+  width: 189px;
+  margin-left: 10px;
+}
+
+.Estado select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: 1px solid darkorange;
+  background-color: #fff;
+  padding: 4px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  color: #000
+}
+
+.Estado select:focus {
+  border-color: darkorange;
+}
+
+.Estado select:not(:focus):valid {
+  color: black;
+}
+
+.Estado .SelectOp::after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+
+}
+
+
+#card2 {
+  margin-top: 10px;
+}
+
+.BI {
+  position: relative;
+}
+
+.BI label {
+padding: 0 5px;
+position: absolute;
+transform: translateY(-50%);
+top: 50%;
+left: 1em;
+transition: 0.3s;
+}
+
+.BI input {
+  margin-left: 10px;
+  color: #000;
+  border: 1px solid darkorange;
+  border-radius: 5px;
+  width: 120px;
+  height: 35px;
+  padding: 0 1rem;
+  outline: none;
+}
+
+.BI2:focus {
+  outline: none;
+  border-color: darkorange;
+}
+
+.BI2:focus+.lab,
+NomeC:not(:placeholder-shown)+.lab {
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+
+
+.tex {
+  margin-left: 30px;
+  top: -2px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  margin-left: 5px;
+  color: #000;
+}
+
+
+
+h4{
+  position: relative;
+  font-size: 1.8rem;
+  
+}
+
+
+
+.conteiner {
+position: relative;
+margin-right: 35px;  
+margin-left: 280px;
+transition: margin-left 0.3s;
+}
+
+.sidebar.collapsed ~ .conteiner {
+      margin-left: 90px;
+    }
+
+
+
+
+
+
+
+
+

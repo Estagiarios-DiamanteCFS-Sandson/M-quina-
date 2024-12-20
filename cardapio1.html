@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!--LINK BOOTSTRAP-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap-icons.min.css">
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="CSS/tabela.css">
+    <link rel="stylesheet" href="CSS/links.css">
+</head>
+<body>
+    <header class="header shadow p-2 bg-body-tertiary rounded">
+        <div class="container text-center">
+          <div class="row justify-content-end align-items-center">
+            <div class="col-auto me-3">
+              <div class="position-relative">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark text-white">
+                  2
+                </span>
+              </div>
+              <i class="bi bi-bell-fill"></i>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="../componentes/imagens/bxs-user-circle.svg" alt="">
+                    Fernando
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+            </div>
+        </div>   
+      </header>
+    
+      <!--sidebar-->
+    <section class="sidebar">
+        <div class="container text-center">
+            <div class="row">
+              <div class="col-4">
+                <button type="button" class="btn hmb"><i class="bi bi-list"></i></button>
+              </div>
+              <div class="col">
+                <h2 class="text-white log">Delicius</h2>
+              </div>
+            </div>
+          </div>  
+        <nav class=" text-white vh-100 m-3">       
+            <ul class="nav flex-column">
+                <li class="nav-item ">
+                  <a class="nav-link text-white" aria-current="page" href="home.html"><i class="bi bi-house-door-fill"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="Usuario.html"><i class="bi bi-people-fill"></i> Usuários</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="cardapio1.html"><i class="bi bi-menu-up"></i> Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Reserva.html"><i class="bi bi-calendar-check-fill"></i> Reservas</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="../index.html"><i class="bi bi-box-arrow-right"></i> Sair</a>
+                </li>
+              </ul>
+          </nav>
+    </section>
+
+    <main class="mainn">
+        <div class="grid text-center" id="user">
+            <div class="g-col-6">
+                <h2>Cardápio</h2>
+            </div>
+            <div class="g-col-6">
+                <!--Começando com a table e add modal-->
+  <main class="Tabela com adi">
+    <!-- Button trigger modal -->
+    
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnn">
+      <span class="text">+ Adicionar</span>
+    </button>
+    <!-- Modal -->
+    <div class="modal fade modal-fullscreen-sm-down" id="exampleModal" tabindex="5" aria-labelledby="exampleModalLabel" aria-hidden="">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastrar Usuários</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal2">
+              <div class="image-upload">
+                <input type="file" id="uploadArea" onchange="handleFileSelect(event)">
+                <img src="" accept="image/" input="file" id="PreviewImagem">
+                <img src="../Componentes/Imagens/up.png" alt="Clique para adicionar imagem" width="38" height="40" id="icon">
+              </div>
+            </div>
+            <br>
+            <div class="card">
+              <div class="title">Informações Pessoais</div>
+              <br>
+              
+              <div class="Linha1">
+                <div class="nome">
+                  <input required type="text" id="name" class="inputs">
+                  <label for="nome">Nome Completo</label>
+                </div>
+                <div class="nome">
+                  <input required type="number" id="Preco" class="inputs">
+                  <label for="email">Preço (AKZ)</label>
+                </div>
+              </div>
+              <br>
+              <div class="message-container" id="Descricao">
+    <input 
+      type="text" 
+      id="message" 
+      required>
+    <label for="Descrição">Descrição</label>
+      </div>
+      <div class="tex"><p>Descrição do produto</p></div>
+              
+              <br>
+              
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="botsalve">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+            </div>
+          </div>
+        <table class="">
+            <thead>
+              <tr class="cabecalho">
+                <th scope="col">Nome</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Dados de registro</th>
+                <th scope="col" class="action">Acção</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">Toscana Grelhada</th>
+                <td>Arroz, batata</td>
+                <td>500 kz</td>
+                <td>01/03/2024</td>
+                <td>
+                    <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-trash-fill"></i></button>
+                </td>                 
+              </tr>
+              <tr>
+                <th scope="row">Toscana Grelhada</th>
+                <td>Arroz, batata</td>
+                <td>500 kz</td>
+                <td>01/03/2024</td>
+                <td>
+                    <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-trash-fill"></i></button>
+                </td>                
+              </tr>
+              <tr>
+                <th scope="row">Toscana Grelhada</th>
+                <td>Arroz, batata</td>
+                <td>500 kz</td>
+                <td>01/03/2024</td>
+                <td>
+                    <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-trash-fill"></i></button>
+                </td>                 
+              </tr>
+              <tr>
+                <th scope="row">Toscana Grelhada</th>
+                <td>Arroz, batata</td>
+                <td>500 kz</td>
+                <td>01/03/2024</td>
+                <td>
+                    <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-trash-fill"></i></button>
+                </td>                 
+              </tr>
+              <tr>
+                <th scope="row">Toscana Grelhada</th>
+                <td>Arroz, batata</td>
+                <td>500 kz</td>
+                <td>01/03/2024</td>
+                <td>
+                    <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-trash-fill"></i></button>
+                </td>                 
+              </tr>
+              <tr>
+                <th scope="row">Toscana Grelhada</th>
+                <td>Arroz, batata</td>
+                <td>500 kz</td>
+                <td>01/03/2024</td>
+                <td>
+                    <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-trash-fill"></i></button>
+                </td>                 
+              </tr>             
+            </tbody>
+          </table>
+    </main>
+
+    <!--link JAVASCRIPT-->
+    <script src="Javascript/script.js"></script>
+
+    <!--LINK LOCAL BOOTSTRAP-->
+    <script src="Javascript/bootstrap.min.js"></script>
+
+    <!--LINK INTERNET BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

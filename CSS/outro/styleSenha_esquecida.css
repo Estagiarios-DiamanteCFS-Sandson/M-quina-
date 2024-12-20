@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+    .brand-title {
+      font-family: 'Satisfy', cursive;
+      font-size: 2.5rem;
+      color: #ff9900;
+      position: absolute;
+      top: 15%;
+      text-align: center;
+      
+    }
+    .card {
+        padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 25px 4px 200px 100px rgba(0, 10, 0, 0.1);
+      text-align: center;
+    }
+   
+
+    .card-title {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      display: block;
+      text-align: left; /* Alinhado à esquerda */
+    }
+    input[type="email"] {
+      border: 1px solid #ff9900;
+      padding: 10px 15px;
+      outline: none;
+      font-size: 1rem;
+    }
+    /* Mexendo nos inputs */
+    input[type="email"]:focus {
+      border-color: #e68a00;
+      box-shadow: 0 0 5px rgba(230, 138, 0, 0.5);
+    }
+    .btn-custom {
+      background-color: #ff9900;
+      color: white;
+      border: none;
+      padding: 10px 0;
+      font-size: 1rem;
+    }
+    .btn-custom:hover {
+      background-color: red;
+    }

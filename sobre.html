@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Restaurante</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fffaf3;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Container principal */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Seção - Conheça Nosso Restaurante */
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 50px 0;
+    }
+    .about-video {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .about-video iframe {
+      width: 100%;
+      height: 280px;
+    }
+    .video-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #ffa500;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      padding: 15px 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .video-button:hover {
+      background: #e69500;
+    }
+    .about-content {
+      flex: 1;
+    }
+    .about-content h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .about-content h2 span {
+      color: #ffa500;
+    }
+    .about-content p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #666;
+    }
+
+    /* Por que escolher nosso restaurante */
+    .features {
+      text-align: center;
+      padding: 50px 0;
+    }
+    .features h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .features h2 span {
+      color: #ffa500;
+    }
+    .features-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .feature-box {
+      flex: 1;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .feature-box:hover {
+      transform: translateY(-10px);
+    }
+    .feature-box h3 {
+      color: #ffa500;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .feature-box h4 {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .feature-box p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <!-- Container principal -->
+  <div class="container">
+    <!-- Conheça Nosso Restaurante -->
+    <section class="about">
+      <div class="about-video">
+        <iframe src="img/received_936089508384340.mp4" frameborder="0" allowfullscreen></iframe>
+        <button class="video-button">▶</button>
+      </div>
+      <div class="about-content">
+        <h2>Conheça <span>nosso restaurante</span></h2>
+        <p>
+          No Delicious, acreditamos que cada refeição é uma oportunidade de criar memórias inesquecíveis. Localizado no coração da cidade, nosso restaurante oferece uma atmosfera aconchegante combinada com uma experiência gastronômica única, misturando sabores autênticos com ingredientes frescos e de alta qualidade.
+        </p>
+        <p>
+          Quer você esteja desfrutando de uma refeição em família, um encontro romântico ou uma reunião de negócios, o Delicious é o lugar perfeito para saborear momentos especiais.
+        </p>
+      </div>
+    </section>
+
+    <!-- Por que escolher nosso restaurante -->
+    <section class="features">
+      <h2>Por que escolher <span>Nosso Restaurante</span></h2>
+      <div class="features-container">
+        <div class="feature-box">
+          <h3>01</h3>
+          <h4>Sabores Únicos e Ingredientes Frescos</h4>
+          <p>
+            Nosso restaurante é conhecido por criar pratos com combinações únicas de sabores, preparados com ingredientes mais frescos para garantir qualidade e satisfação a cada mordida.
+          </p>
+        </div>
+        <div class="feature-box">
+          <h3>02</h3>
+          <h4>Ambiente Convidativo e Acolhedor</h4>
+          <p>
+            Oferecemos um espaço confortável e elegante, ideal para reunir amigos, familiares ou colegas e tornar qualquer ocasião especial ainda mais memorável.
+          </p>
+        </div>
+        <div class="feature-box">
+          <h3>03</h3>
+          <h4>Atendimento Excepcional</h4>
+          <p>
+            Nossa equipe é dedicada a proporcionar uma experiência incrível, com serviço personalizado e atenção a cada detalhe para garantir que sua visita seja perfeita.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

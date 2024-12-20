@@ -36,6 +36,7 @@
       align-items: center;
       justify-content: center;
       font-family: #ffb03b;
+      
   } 
   div.car{
       border: none!important;
@@ -45,7 +46,7 @@
      }
      form h3{
        text-align: center;
-       margin: 4px;
+       margin: 10px;
        font-family: var(--bs-fontsecond--fontfamily);
      }
      form{
@@ -99,16 +100,69 @@
     }
     div #Nao{
       color: #ffb03b;
+      
     }
+     div #lm{
+      margin: -3px;
+      
+      
+    }
+     /*Estilização da pagina principal*/
      #botton{
       color:white;
       background-color: #ffb03b;
       float:right;
       border:none;
+      
     }
     #icon{
       width:30px;
       
     }
+    
+    .sidebar{
+      background-color: #f48505;
+      grid-area: side;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 200px;
+  }
+  .main{
+    padding: 30px;
+    grid-area:main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+ header#hd{
+  height: 75px;
+  width: 100px;
+  
+}
+main div#cartao{
+  float:right;
+  
 
-   
+}
+main div#car1{
+  height:120px;
+  box-shadow: 2px 2px 5px -4px black;
+  width: 18rem;
+}
+
+main div i{
+  background-color: #f48505;
+  padding:5% 8%;
+  border-radius:10%;
+  color:#ffffff;
+  float:left;
+}
+  main div p{
+    display:flex ;
+    justify-content:flex-end;
+    margin-bottom: 0%;
+  }
+ 
