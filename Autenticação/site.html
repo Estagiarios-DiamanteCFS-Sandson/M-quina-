@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Restaurante</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/site.css">
+  
+</head>
+<body>
+  <!-- Topo -->
+  <div class="top-bar">
+    📞 +244 943 947 798 &nbsp; | &nbsp; 🕒 Seg-Dom: 11:00 AM - 23:00 PM
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Delicious</div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="#">Cardápio</a></li>
+      <li><a href="#">Especial</a></li>
+      <li><a href="#">Chefes</a></li>
+      <li><a href="#">Galeria</a></li>
+      <li><a href="#">Contactos</a></li>
+    </ul>
+    <a href="#" class="btn">Reservar mesa</a>
+  </nav>
+
+  <!-- Carrossel -->
+  <div class="carousel">
+    <img src="img/img/slide-6.jpg" alt="Prato 1">
+    <div class="hero-content">
+      <h2><span>Delicious</span> Restaurante</h2>
+      <p>Cada prato reflete maestria culinária e paixão pelo artesanato.</p>
+      <div class="buttons">
+        <a href="#" class="btn">Nosso Cardápio</a>
+        <a href="#" class="btn reservar">Reservar Mesa</a>
+      </div>
+    </div>
+    <button class="carousel-btn prev">❮</button>
+    <button class="carousel-btn next">❯</button>
+  </div>
+
+<!-- Adicionar FontAwesome para os ícones sociais -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <script>
+    const slides = ['img/img/slide-5.jpg', 'img/img/slide-5.jpg', 'img/img/slide-0.jpg'];
+    let currentSlide = 0;
+    const carousel = document.querySelector('.carousel img');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+
+    prevBtn.addEventListener('click', () => {
+      currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+      carousel.src = slides[currentSlide];
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+      carousel.src = slides[currentSlide];
+    });
+  </script>
+  <!-- Container principal- SOBRE -->
+  <div class="container">
+    <!-- Conheça Nosso Restaurante -->
+    <section class="about">
+      <div class="about-video">
+        <iframe src="img/received_936089508384340.mp4" frameborder="0" allowfullscreen></iframe>
+        <button class="video-button">▶</button>
+      </div>
+      <div class="about-content">
+        <h2>Conheça <span>nosso restaurante</span></h2>
+        <p>
+          No Delicious, acreditamos que cada refeição é uma oportunidade de criar memórias inesquecíveis. Localizado no coração da cidade, nosso restaurante oferece uma atmosfera aconchegante combinada com uma experiência gastronômica única, misturando sabores autênticos com ingredientes frescos e de alta qualidade.
+        </p>
+        <p>
+          Quer você esteja desfrutando de uma refeição em família, um encontro romântico ou uma reunião de negócios, o Delicious é o lugar perfeito para saborear momentos especiais.
+        </p>
+      </div>
+    </section>
+
+    <!-- Por que escolher nosso restaurante -->
+    <section class="features">
+      <h2>Por que escolher <span>Nosso Restaurante</span></h2>
+      <div class="features-container">
+        <div class="feature-box">
+          <h3>01</h3>
+          <h4>Sabores Únicos e Ingredientes Frescos</h4>
+          <p>
+            Nosso restaurante é conhecido por criar pratos com combinações únicas de sabores, preparados com ingredientes mais frescos para garantir qualidade e satisfação a cada mordida.
+          </p>
+        </div>
+        <div class="feature-box">
+          <h3>02</h3>
+          <h4>Ambiente Convidativo e Acolhedor</h4>
+          <p>
+            Oferecemos um espaço confortável e elegante, ideal para reunir amigos, familiares ou colegas e tornar qualquer ocasião especial ainda mais memorável.
+          </p>
+        </div>
+        <div class="feature-box">
+          <h3>03</h3>
+          <h4>Atendimento Excepcional</h4>
+          <p>
+            Nossa equipe é dedicada a proporcionar uma experiência incrível, com serviço personalizado e atenção a cada detalhe para garantir que sua visita seja perfeita.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+
+

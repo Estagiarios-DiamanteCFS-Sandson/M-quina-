@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+          overflow-x: hidden;
+          overflow-y: hiden;
+        }
+        /* Mexendo no titulo principal*/
+         .brand-title {
+      font-family: 'Satisfy', cursive;
+      font-size: 2.5rem;
+      color: #ff9900;
+      position: absolute;
+      top: 2%;
+      text-align: center;
+      width: 100%;
+    }
+    /*Infelizmente o Card não funciona do jieto que quero, container para mexer*/
+        
+        .card2 {
+            max-width: 400px;
+            margin: 60px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        
+        /*Titulo do Card = Login */
+        
+         .card-title {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    
+   
+   /* Modificações para os botões com e sem hover */
+        .btn-primary {
+            background-color: #f39c12;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: red;
+        }
+        
+      /* Mexendo nos links */
+      
+        .link {
+            text-decoration: none;
+            color: #f39c12;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        
+        
+        /*Home Page */
+        
+    /* Sidebar */
+    .sidebar {
+      background-color: #ffc107;
+      color: #fff;
+      height: 100vh;
+      width: 250px;
+      position: fixed;
+      transition: width 0.3s;
+      overflow: hidden;
+    }
+
+    .sidebar.collapsed {
+      width: 70px;
+    }
+
+    .sidebar .brand {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      font-family: 'Satisfy', cursive;
+      font-size: 24px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .sidebar.collapsed .brand .text {
+      display: none;
+    }
+
+    .sidebar .menu-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      transition: all 0.3s;
+    }
+    
+    /*Mexendo no hover do menu */
+
+    .sidebar .menu-item:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Tirar a ordem ou dislay */
+
+    .sidebar.collapsed .text {
+      display: none;
+    }
+    
+    /* Mexendo no Colapso causado pelo movimento */
+
+    .sidebar.collapsed .menu-item {
+      justify-content: center;
+    }
+    
+    /*Alterando a fonte do del */
+    #del {
+      font-family: 'Satisfy', cursive;
+      font-size: 2.5rem;
+    }
+
+    /* Header */
+    header {
+      
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px 20px;
+      background-color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      transition: margin-left 0.3s;
+    }
+    /* collapsed ou colapso do header e sidebar*/
+
+    .sidebar.collapsed + header {
+      margin-left: 70px;
+    }
+
+   /* Mexendo no botao do header */
+    .btn-garcia {
+      background-color: #ffc107;
+      color: #fff;
+      border: 2px solid #ffc107;
+      border-radius: none;
+      padding: 5px 15px;
+    }
+
+    .btn-garcia:hover {
+      background-color: #e0a800;
+      border-color: #e0a800;
+    }
+
+    /* Cards */
+    .card {
+      position: relative;
+      padding: 20px;
+      background-color: #fff;
+      border: none;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card i {
+      color: #ffc107;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 30px;
+    }
+
+    .card h5 {
+      margin-bottom: 0;
+      text-align: right;
+    }
+
+   /* Letras small */
+    .card small {
+      text-align: right;
+      display: block;
+    }
+
+    
+    .main {
+      margin-left: 250px;
+      transition: margin-left 0.3s;
+    }
+
+/* main com o movimento do sidebar */
+    .sidebar.collapsed ~ .main {
+      margin-left: 70px;
+    }
+
+    
+    
+.menu-item a {
+  text-decoration: none;
+  color: white;
+}

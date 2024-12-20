@@ -1,0 +1,279 @@
+
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      background: #000;
+      overflow-x: hidden;
+    }
+
+    /* Topo */
+    .top-bar {
+      background: #000;
+      color: #fff;
+      font-size: 0.9rem;
+      text-align: left;
+      padding: 10px 0;
+      letter-spacing: 0.5px;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: ri;
+      padding: 20px 5%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+    .navbar .menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .navbar .menu a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+    .navbar .menu a:hover{
+      background-color: #ffa500;
+    }
+    .navbar .btn {
+      background: #ffa500;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+    }
+    .navbar .btn:hover {
+      background: #e55c50;
+    }
+
+    /* Carrossel */
+    .carousel {
+      position: relative;
+      height: 100vh;
+      max-width: 100%;
+      overflow: hidden;
+    }
+    .carousel img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .carousel .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+    .hero-content h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+    .hero-content h2 span {
+      color: #ffa500;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .hero-content .buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .hero-content .btn {
+      background: #ffa500;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    .hero-content .btn:hover {
+      background: #e69500;
+    }
+    .hero-content .btn.reservar {
+      background: #ffa500;
+    }
+    .hero-content .btn.reservar:hover {
+      background: #ffa500;
+    }
+
+    /* Botões do carrossel */
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 10px 15px;
+      z-index: 10;
+      border-radius: 50%;
+    }
+    .carousel-btn.prev {
+      left: 20px;
+    }
+    .carousel-btn.next {
+      right: 20px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .hero-content h2 {
+        font-size: 2.5rem;
+      }
+      .hero-content p {
+        font-size: 1rem;
+      }
+      .hero-content .buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+/* Reset básico, sobre*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fffaf3;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  /* Container principal */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Seção - Conheça Nosso Restaurante */
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px 0;
+  }
+  .about-video {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .about-video iframe {
+    width: 100%;
+    height: 280px;
+  }
+  .video-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffa500;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video-button:hover {
+    background: #e69500;
+  }
+  .about-content {
+    flex: 1;
+  }
+  .about-content h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .about-content h2 span {
+    color: #ffa500;
+  }
+  .about-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #666;
+  }
+
+  /* Por que escolher nosso restaurante */
+  .features {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .features h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  .features h2 span {
+    color: #ffa500;
+  }
+  .features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .feature-box {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .feature-box:hover {
+    transform: translateY(-10px);
+  }
+  .feature-box h3 {
+    color: #ffa500;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .feature-box h4 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .feature-box p {
+    font-size: 0.95rem;
+    color: #666;
+  }

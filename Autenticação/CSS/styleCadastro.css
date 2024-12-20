@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+        body {
+            background-color: #f8f9fa;
+        }
+        
+         .brand-title {
+      font-family: 'Satisfy', cursive;
+      font-size: 2.5rem;
+      color: #ff9900;
+      text-align: center;
+      top: 15px;
+      width: 100%;
+      
+    }
+  
+        .card {
+            max-width: 400px;
+            margin: 0px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .brand {
+            font-size: 28px;
+            font-weight: bold;
+            color: #f6a623;
+            margin-bottom: 10px;
+        }
+        .btn-primary {
+            background-color: #f6a623;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #e5941f;
+        }
+    
